@@ -1,0 +1,20 @@
+[versions]
+tink       = "1.21.0"
+springBoot = "3.4.12"
+h2         = "2.3.232"
+jakartaJpa = "3.1.0"
+junit      = "5.11.4"
+assertj    = "3.27.3"
+
+[libraries]
+tink           = { module = "com.google.crypto.tink:tink",        version.ref = "tink" }
+junit-bom      = { module = "org.junit:junit-bom",                version.ref = "junit" }
+junit-jupiter  = { module = "org.junit.jupiter:junit-jupiter" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+assertj        = { module = "org.assertj:assertj-core",           version.ref = "assertj" }
+
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure", version.ref = "springBoot" }
+jakarta-persistence       = { module = "jakarta.persistence:jakarta.persistence-api", version.ref = "jakartaJpa" }
+spring-boot-data-jpa      = { module = "org.springframework.boot:spring-boot-starter-data-jpa", version.ref = "springBoot" }
+spring-boot-test          = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springBoot" }
+h2                        = { module = "com.h2database:h2", version.ref = "h2" }
