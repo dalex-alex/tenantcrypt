@@ -1,5 +1,7 @@
 # tenantcrypt
 
+[![build](https://github.com/dalex-alex/tenantcrypt/actions/workflows/build.yml/badge.svg)](https://github.com/dalex-alex/tenantcrypt/actions/workflows/build.yml)
+
 Per-tenant envelope encryption for the JVM, for columns that still have to be **queryable**: a
 two-input key derivation (server master key + per-tenant data key) feeding AES-256-GCM for ordinary
 fields, AES-SIV where a field must stay searchable, and keyed HMAC fingerprints for content too
